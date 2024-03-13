@@ -2,6 +2,7 @@ import { app } from './Firebase';
 import './App.css';
 import { getAuth , createUserWithEmailAndPassword } from "firebase/auth";
 import Signup from './pages/Signup';
+import Signin from './pages/signin';
 
 const auth = getAuth(app);
 
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <header className="App-header">
        <Signup/>
+       <Signin/>
       </header>
     </div>
   );
